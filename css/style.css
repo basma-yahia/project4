@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif!important;
+}
+a{
+    text-decoration:none!important;
+    color: white;
+}
+#user-info{
+    display: none;
+    justify-content: space-between!important;
+    align-items: center!important;
+    background-color: brown!important;
+    width:100%!important;
+}
+#user{
+    margin-left:10%;
+    font-size: 20px!important;
+    /* margin-right:40%; */
+    background-color: aqua;
+}
+.navbar-brand{
+    font-weight: bold;
+}
+#navbar-info{
+    font-size: 20px;
+}
+/* (header) */
+nav {
+    height: 70px;
+    padding: 10px 0;
+}
+/* .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* .header-content  .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+} */
+/* nav ul {
+    display: flex;
+    list-style: none;
+}
+nav  li a {
+    display: block;
+    color: #fff;
+    min-width: 80px;
+    padding: 5px;
+    margin: 0px 5px;
+} */
+
+/* (form) */
+.section-form {
+    /* position: absolute; */
+    /* top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); */
+    margin: 5% 15%;
+    width: 70%;
+    line-height: 2;
+    /* text-align: center; */
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+}
+.section-form form label{
+    font-weight: bold;
+}
+.section-form  h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color:purple;
+}
+.section-form  form input:not(input[type="checkbox"]){
+    display: block;
+    width:100%;
+    margin: 5px 0;
+    height: 30px;
+    border: 1px  solid #ddd;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+}
+
+.section-form form  input[type="submit"] {
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+.section-form form  input[type="submit"]:hover {
+    opacity: .5;
+}
+/* 
+nav  ul #user_info {
+    display: none;
+}  */
+/* (products) */
+.products {
+    width: 80%;
+    margin-left: 10%!important;
+    /* display: flex; */
+}
+.product_item {
+    /* display: flex; */
+    width: 100%;
+    border: 1px solid #ddd;
+    min-height: 400px;
+    margin-bottom: 20px;
+    line-height: 0.5;
+    transition: 0.5s;
+}
+.product_item:hover{
+    transform: scale(1.05);
+    border: 1px solid black;
+    
+}
+.product_item_img {
+    width: 100%;
+    height: 70%;
+    margin-right:10px ;
+}
+.product_item_info{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    font-weight: bold;
+}
+.product_item_info h3{
+    font-weight: normal;
+    font-size: 25px;
+}
+.product_item_action  {
+    flex:1;
+    /* text-align: right; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.product_item .add_to_cart {
+    /* display: block; */
+    /* margin-right: auto; */
+    background-color: rgb(54, 66, 105);
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product_item .fav {
+    cursor: pointer;
+    /* display: block; */
+    margin-top: 15px;
+    width: 25px;
+    margin-left: auto;
+}
+
+/* (badge) */
+.shopping-cart{
+    color: #4977cc;
+    position: relative;
+}
+nav ul#user_info li i {
+    color: #4977cc;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav ul#user_info{
+    cursor: pointer;
+}
+.badge {
+    position: absolute;
+    color: #4977cc!important;
+    display: none!important;
+    top:28px;
+    right:265px;
+    font-size: 13px;
+} 
+
+/* (carts-products) */
+ /* .carts_products {
+    position: absolute!important;
+    width:210px;
+    transform: translate(-40px,0);
+    background-color: #eaeaea;
+    top: 56px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none!important;
+} */
+.carts_products {
+    /* display: none!important; */
+    position: fixed;
+    top:10%;
+    right:3%;
+    background-color: #ffffff;
+    border: 1px solid #1b5e9c;
+    width: 400px;
+    height: 230px;
+    padding: 20px;
+    z-index: 1;   
+}
+.carts_products a {
+   display: block;
+   color: #000;
+   margin: 4px 0;
+   padding: 0;
+   /* background-color: darkgreen; */
+   /* color: #fff; */
+   /* text-align: center; */
+}
+.fav-color{
+    color: red;
+    font: bold;
+ 
+    width: fit-content;
+}
+
+
+#badge {
+    position: absolute; /* Position relative to parent container */
+    top: 20px; /* Adjust to align properly */
+    right: 35px; /* Adjust to align properly */
+    background-color: rgb(160, 93, 17); /* Green background for the badge */
+    color: white; /* White text for contrast */
+    border-radius: 50%; /* Make the badge circular */
+    width: 20px; /* Define size of the badge */
+    height: 20px; /* Define size of the badge */
+    display: flex; /* Flex to center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+  
+  .shopping_cart_icon {
+    position: relative; /* Create a reference point for badge positioning */
+    display: inline-block; /* Ensure icon and badge stay inline */
+  }
+  .custom-card {
+    height: 250px; /* Set a consistent height */
+  }
+
+  /*##################coursel */
+
+
+  #sliders{
+    margin-bottom: 200px;
+  }
+  
