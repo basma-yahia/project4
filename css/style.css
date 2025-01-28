@@ -214,7 +214,7 @@ nav ul#user_info{
 #badge {
     position: absolute; /* Position relative to parent container */
     top: 20px; /* Adjust to align properly */
-    right: 20px; /* Adjust to align properly */
+    right: 30px; /* Adjust to align properly */
     color: rgb(91, 78, 209); /* White text for contrast */
     border-radius: 50%; /* Make the badge circular */
     width: 20px; /* Define size of the badge */
@@ -265,12 +265,12 @@ nav ul#user_info{
         min-width: 100%!important;
         min-height: auto;
     }
-    .item{
+    /* .item{
         padding: 10px;
         min-height: auto;
-    }
-    .product_item_desc{
+    } */
+    /* .product_item_desc{
         padding: 10px;
         min-height: auto;
-    }
+    } */
   }
