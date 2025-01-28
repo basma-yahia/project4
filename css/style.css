@@ -260,4 +260,17 @@ nav ul#user_info{
         margin-top: 120px!important;
         width: 375px;
     }
+    .card-div{
+        margin-left: 16px;
+        min-width: 100%!important;
+        min-height: auto;
+    }
+    .item{
+        padding: 10px;
+        min-height: auto;
+    }
+    .product_item_desc{
+        padding: 10px;
+        min-height: auto;
+    }
   }

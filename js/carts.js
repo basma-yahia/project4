@@ -20,8 +20,8 @@ function drawCartProducts(products) {
 
     // Add the product
     content += `
-      <div class="col-6 d-flex justify-content-center">
-        <div class="card ratio ratio-16x9" style="max-height: 190px;">
+      <div class="col-6 d-flex justify-content-center card-div">
+        <div class="card ratio card-pro ratio-16x9" style="max-height: 190px;">
           <div class="d-flex justify-content-between gap-2">
             <div class="flex-shrink-0">
               <img width="150" height="150" src="${item.img}" alt="${item.productName}">
@@ -112,11 +112,12 @@ function displayFav(){
                 <h3>Product: ${item.Product}</h3>
                  <p>Price: ${item.Price}</p>
                  <p>Category: ${item.Category}</p></div>
-            </div>
-            <div class="product_item_action">
+                 <div class="product_item_action">
                <button class="btn btn-primary add_to_cart" onClick = "addToCart(this, ${item.id})">Add To Cart</button>
               <i data-id='${item.id}' class="fas fa-heart fav add_to_fav " onClick = "addToFav(this, ${item.id})"></i>
             </div>
+            </div>
+            
         </div>
         
         `
