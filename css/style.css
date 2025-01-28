@@ -242,7 +242,7 @@ nav ul#user_info{
   }
   @media (max-width : 768px) {
     .product_item{
-        min-height: 700px;
+        min-height: 600px;
     }
     #navbar-info{
         min-height: auto!important;
