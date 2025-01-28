@@ -106,7 +106,7 @@ function drawItems(prductshow) {
             </div>
             <div class="product_item_action">
                <button class="btn btn-primary add_to_cart" onClick = "addToCart(this, ${item.id})">Add To Cart</button>
-              <i data-id='${item.id}' class="fa-solid fa-heart  fav add_to_fav" onClick = "addToFav(this, ${item.id})"></i>
+               <i data-id='${item.id}' class="fas fa-heart fav add_to_fav" onClick = "addToFav(this, ${item.id})"></i>
             </div>
         </div>       
         `;

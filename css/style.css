@@ -182,17 +182,6 @@ nav ul#user_info{
     font-size: 13px;
 } 
 
-/* (carts-products) */
- /* .carts_products {
-    position: absolute!important;
-    width:210px;
-    transform: translate(-40px,0);
-    background-color: #eaeaea;
-    top: 56px;
-    padding: 10px;
-    border: 1px solid green;
-    display: none!important;
-} */
 .carts_products {
     /* display: none!important; */
     position: fixed;
@@ -225,9 +214,8 @@ nav ul#user_info{
 #badge {
     position: absolute; /* Position relative to parent container */
     top: 20px; /* Adjust to align properly */
-    right: 35px; /* Adjust to align properly */
-    background-color: rgb(160, 93, 17); /* Green background for the badge */
-    color: white; /* White text for contrast */
+    right: 20px; /* Adjust to align properly */
+    color: rgb(91, 78, 209); /* White text for contrast */
     border-radius: 50%; /* Make the badge circular */
     width: 20px; /* Define size of the badge */
     height: 20px; /* Define size of the badge */
@@ -236,7 +224,6 @@ nav ul#user_info{
     align-items: center; /* Center text vertically */
     font-size: 12px; /* Adjust font size */
     font-weight: bold; /* Make text bold */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   }
   
   .shopping_cart_icon {
@@ -253,4 +240,24 @@ nav ul#user_info{
   #sliders{
     margin-bottom: 200px;
   }
-  
+  @media (max-width : 768px) {
+    .product_item{
+        min-height: 500px;
+    }
+    #navbar-info{
+        min-height: auto!important;
+        width: 100%;
+        background-color: rgb(226, 222, 222);
+        margin-top: 10px;
+        padding:15px;
+        line-height: 2.5;
+    }
+    #badge{
+        top: 30px;
+        right: 30px;
+    }
+    .carts_products{
+        margin-top: 120px!important;
+        width: 375px;
+    }
+  }
